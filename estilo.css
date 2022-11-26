@@ -80,7 +80,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: left;   
-    background-image: url(../Restauracion/imagenes/tipo.jpg) ;
+    background-image: url(../restauracion/imagenes/tipo.jpg) ;
     background-size: cover;
     background-position: center;
 }
@@ -195,7 +195,7 @@ width: 300px;
       display: flex;
       align-items: center;
       justify-content: center;   
-      background-image: url(../Restauracion/imagenes/tallerBW.jpg);
+      background-image: url(../restauracion/imagenes/tallerBW.jpg);
       background-size: cover;
       background-position: center;
       color: rgb(205, 202, 50);
@@ -246,7 +246,7 @@ width: 300px;
     
     width: auto;
     height: 100vh;
-    background-image: url(../Restauracion/imagenes/munich.jpg);
+    background-image: url(../restauracion/imagenes/munich.jpg);
     background-size: cover;
     background-position: center;
     
@@ -279,7 +279,7 @@ width: 70em;
     grid-area: parrafo;
 }
 .foto2{
-    background-image: url(../Restauracion/imagenes/escuelatalleralumnos.jpg);
+    background-image: url(../restauracion/imagenes/escuelatalleralumnos.jpg);
   grid-area: foto2;
   background-size: contain;
   background-repeat: no-repeat;
@@ -290,7 +290,7 @@ width: 70em;
 
 
 .foto1{
-    background-image: url(../Restauracion/imagenes/grupotaller.jpeg);
+    background-image: url(../restauracion/imagenes/grupotaller.jpeg);
  grid-area: foto1;
  background-size: contain;
  background-repeat: no-repeat;
@@ -299,7 +299,7 @@ width: 70em;
     transform:scale(1.2,1.2)
 }
 .foto3{
-    background-image: url(../Restauracion/imagenes/grupo.jpg);
+    background-image: url(../restauracion/imagenes/grupo.jpg);
 grid-area: foto3;
 background-size: contain;
 background-repeat: no-repeat;
@@ -308,7 +308,7 @@ background-repeat: no-repeat;
     transform:scale(1.2,1.2)
 }
 .foto4{
-    background-image: url(../Restauracion/imagenes/nosotros.jpg);
+    background-image: url(../restauracion/imagenes/nosotros.jpg);
     grid-area: foto4;
     background-size: contain;
     background-repeat: no-repeat;
@@ -326,7 +326,7 @@ background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;   
-    background-image: url(../Restauracion/imagenes/bebe2.jpg);
+    background-image: url(../restauracion/imagenes/bebe2.jpg);
     background-size: cover;
     background-position: center;
     flex-direction: row;
@@ -345,7 +345,7 @@ background-repeat: no-repeat;
     display: flex;
     align-items:flex-start;
     justify-content: left;   
-    background-image: url(../Restauracion/imagenes/piramide2.jpg);
+    background-image: url(../restauracion/imagenes/piramide2.jpg);
     background-size: cover;
     background-position: center;
     flex-direction: column;
