@@ -1,0 +1,21 @@
+{
+  "name": "restauracion",
+  "version": "1.0.0",
+  "description": "restauracion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss sass/sass.scss restauracion/estilonuevo.css","watch-css":  "sass --watch sass/sass.scss estilonuevo.css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barbarakristof/Restauracion-CODER.git"
+  },
+  "author": "barbara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barbarakristof/Restauracion-CODER/issues"
+  },
+  "homepage": "https://github.com/Barbarakristof/Restauracion-CODER#readme"
+}
