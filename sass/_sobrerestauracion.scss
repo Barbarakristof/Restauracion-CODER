@@ -1,0 +1,85 @@
+/* SOBRE RESTAURACIÓN*/
+.restauracion {
+    color: rgb(205, 202, 50);
+    background-color: #303030;
+    font-size: small;
+    padding: 10 px;
+    height: 400px;
+    overflow: auto;
+}
+
+.atenerencuenta{
+    font-size: small;
+}
+.interno{
+    font-size: small;
+
+}
+.atenerencuenta h2{
+    font-size: small;
+}
+.interno h2{
+    font-size: small;
+}
+
+
+
+@media only screen and (min-width:480px){
+    .titulosobre{
+        color: rgb(205, 202, 50);
+        font-size: 100px;
+        width: 70em;
+        height: 600px;
+        }
+    .restauracion{
+      width: auto;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;   
+      background-image: url(imagenes/tallerBW.jpg);
+      background-size: cover;
+      background-position: center;
+      color: rgb(205, 202, 50);
+      font-size: xx-large;
+
+                }
+
+      .sobrerestauracion{
+      background-color: rgba(255, 255, 255, 0.124);
+      backdrop-filter: blur(7px);
+       justify-content: center;
+       position: fixed;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 3fr;
+       gap: 0px 74px;
+       grid-auto-flow: row;
+       grid-template-areas:
+         "atenerencuenta interno";
+         width: 900px;
+     }
+     
+     .atenerencuenta { grid-area: atenerencuenta; }
+     
+     .interno { grid-area: interno; }
+      }
+      .titulosobre { grid-area: titulosobre; }
+      .atenerencuenta { 
+        grid-area: atenerencuenta; 
+        font-size: large;
+    
+     }
+     .atenerencuenta h2{
+        font-size:x-large;
+     }
+      .interno { grid-area: interno;
+     font-size: large;
+     }
+     .interno h2{
+
+        font-size: large;
+     }
+     
+
+

@@ -1,3 +1,390 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+}
+
+.menu {
+  font-size: small;
+  background-color: #303030;
+  list-style-type: none;
+}
+
+.menu li a {
+  color: rgb(205, 202, 50);
+  text-decoration: none;
+  background-color: gray;
+}
+
+@media only screen and (min-width: 480px) {
+  .menu {
+    background-color: rgba(48, 48, 48, 0.8549019608);
+    padding: 0%;
+    list-style-type: none;
+    margin: 20 px auto;
+    text-align: center;
+  }
+  .menu li {
+    display: inline-block;
+    text-align: center;
+  }
+  .menu li a {
+    padding: 20px;
+    margin: 10px;
+    color: rgb(205, 202, 50);
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Rubik", sans-serif;
+  }
+  .menu li a:hover {
+    color: #303030;
+    background-color: gray;
+  }
+}
+/* HOME */
+.home {
+  background-color: #303030;
+  font-size: medium;
+  color: rgb(205, 202, 50);
+}
+
+.noticias {
+  color: rgb(205, 202, 50);
+  font-size: small;
+}
+
+.t1 img {
+  width: 100px;
+}
+
+.t2 img {
+  width: 100px;
+}
+
+.t3 img {
+  width: 100px;
+}
+
+@media only screen and (min-width: 480px) {
+  .home {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: url(imagenes/tipo.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .texto1 {
+    color: rgb(205, 202, 50);
+    font-size: 100px;
+  }
+  h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 50px;
+    color: rgb(205, 202, 50);
+    text-align: center;
+  }
+  .noticias {
+    font-family: "Rubik", sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: beige;
+    width: auto;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #303030;
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+  }
+  .t1 {
+    width: 20vw;
+    height: 10rem;
+    margin: 1rem;
+    color: rgb(205, 202, 50);
+  }
+  .t1 img {
+    width: 250px;
+  }
+  .t1 :hover {
+    transform: scale(1.2, 1.2);
+  }
+  /*nochede los museos*/
+  .t2 {
+    width: 20vw;
+    height: 10rem;
+    margin: 1rem;
+    color: rgb(205, 202, 50);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .t2 img {
+    width: 280px;
+  }
+  .t2a {
+    text-decoration: none;
+    color: rgb(205, 202, 50);
+  }
+  .t2 :hover {
+    transform: scale(1.2, 1.2);
+  }
+  .t3 {
+    width: 20vw;
+    height: 10rem;
+    margin: 1rem;
+    color: rgb(205, 202, 50);
+  }
+  .t3 img {
+    width: 300px;
+  }
+  .t3 :hover {
+    transform: scale(1.2, 1.2);
+  }
+}
+/* SOBRE RESTAURACIÓN*/
+.restauracion {
+  color: rgb(205, 202, 50);
+  background-color: #303030;
+  font-size: small;
+  padding: 10 px;
+  height: 400px;
+  overflow: auto;
+}
+
+.atenerencuenta{
+  font-size: small;
+}
+.interno{
+  font-size: small;
+
+}
+.atenerencuenta h2{
+  font-size: small;
+}
+.interno h2{
+  font-size: small;
+}
+
+
+
+@media only screen and (min-width:480px){
+  .titulosobre{
+      color: rgb(205, 202, 50);
+      font-size: 100px;
+      width: 70em;
+      height: 600px;
+      }
+  .restauracion{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background-image: url(imagenes/tallerBW.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(205, 202, 50);
+    font-size: xx-large;
+
+              }
+
+    .sobrerestauracion{
+    background-color: rgba(255, 255, 255, 0.124);
+    backdrop-filter: blur(7px);
+     justify-content: center;
+     position: fixed;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 3fr;
+     gap: 0px 74px;
+     grid-auto-flow: row;
+     grid-template-areas:
+       "atenerencuenta interno";
+       width: 900px;
+   }
+   
+   .atenerencuenta { grid-area: atenerencuenta; }
+   
+   .interno { grid-area: interno; }
+    }
+    .titulosobre { grid-area: titulosobre; }
+    .atenerencuenta { 
+      grid-area: atenerencuenta; 
+      font-size: large;
+  
+   }
+   .atenerencuenta h2{
+      font-size:x-large;
+   }
+    .interno { grid-area: interno;
+   font-size: large;
+   }
+   .interno h2{
+
+      font-size: large;
+   }
+   
+
+
+/*nosotros*/
+.nosotros {
+  width: auto;
+  height: 100vh;
+  background-image: url(imagenes/munich.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.grid {
+  background-color: rgba(255, 255, 255, 0.124);
+  backdrop-filter: blur(7px);
+  margin: 0px;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1.5fr 1.5fr;
+  gap: 15px 0px;
+  grid-template-areas: "nosotros nosotros nosotros" "foto1 foto2 parrafo" "foto3 foto4 parrafo";
+  width: 70em;
+}
+
+.h1nosotros {
+  color: rgb(205, 202, 50);
+  font-size: 70px;
+}
+
+.parrafo {
+  color: rgb(205, 202, 50);
+  font-size: x-large;
+  grid-area: parrafo;
+}
+
+.foto2 {
+  background-image: url(imagenes/escuelatalleralumnos.jpg);
+  grid-area: foto2;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.foto2:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto1 {
+  background-image: url(imagenes/grupotaller.jpeg);
+  grid-area: foto1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.foto1:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto3 {
+  background-image: url(imagenes/grupo.jpg);
+  grid-area: foto3;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.foto3:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.foto4 {
+  background-image: url(imagenes/nosotros.jpg);
+  grid-area: foto4;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.foto4:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/*trabajos*/
+.trabajos {
+  margin: 0%;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(imagenes/bebe2.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-direction: row;
+}
+
+/*contacto*/
+.contacto1 {
+  font-size: 70px;
+  margin: 20px;
+}
+
+.contacto {
+  color: rgb(205, 202, 50);
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  background-image: url(imagenes/piramide2.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 450px;
+  margin: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+/*footer*/
+.footer {
+  font-size: smaller;
+  background-color: black;
+  color: azure;
+}
+
+@media only screen and (min-width: 480px) {
+  .footer {
+    width: auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: azure;
+  }
+}
 
 /*# sourceMappingURL=estilonuevo.css.map */

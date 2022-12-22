@@ -52,10 +52,36 @@ h1{
 /* HOME */
 
 .home{
-    background-color: #303030;
-    font-size: medium;
-    color: rgb(205, 202, 50);
+    width: 400px;
+    height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: left;   
+      background-image: url(imagenes/tipo.jpg) ;
+      background-size: cover;
+      background-position: center;
 }
+
+.texto1{
+    color: rgb(205, 202, 50);
+    font-size: 30px;   }
+
+
+    .noticias{
+        font-family: 'Rubik', sans-serif;
+        margin: 0%;
+        padding: 0%;
+        background-color: beige;
+        width:100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-color: #303030;
+        background-size: cover;
+        background-position: center;
+        flex-direction: row;
+   }
 .noticias{
     color: rgb(205, 202, 50);
     font-size: small;
@@ -63,12 +89,19 @@ h1{
 }
 .t1 img{
     width: 100px;
+   
+    height: 100px;
+    margin: 0.5rem;
 }
 .t2 img{
     width: 100px;
+    height: 100px;
+    margin: 0.5rem;
 }
 .t3 img{
     width: 100px;
+    height: 100px;
+    margin: 0.5rem;
 }
 
 
@@ -170,9 +203,14 @@ width: 300px;
 
 /* SOBRE RESTAURACIÓN*/
 .restauracion {
+    color: rgb(205, 202, 50);
     background-color: #303030;
     font-size: small;
+    padding: 10 px;
+    height: 400px;
+    overflow: auto;
 }
+
 .atenerencuenta{
     font-size: small;
 }
@@ -188,7 +226,14 @@ width: 300px;
 }
 
 
+
 @media only screen and (min-width:480px){
+    .titulosobre{
+        color: rgb(205, 202, 50);
+        font-size: 100px;
+        width: 70em;
+        height: 600px;
+        }
     .restauracion{
       width: auto;
       height: 100vh;
@@ -202,21 +247,25 @@ width: 300px;
       font-size: xx-large;
 
                 }
+
       .sobrerestauracion{
       background-color: rgba(255, 255, 255, 0.124);
       backdrop-filter: blur(7px);
-      
-        justify-content: center;
+       justify-content: center;
        position: fixed;
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-       grid-template-rows: 0.3fr 1.7fr; 
-       gap: 11px 25px; 
-       grid-template-areas: 
-       "titulosobre titulosobre"
-        "atenerencuenta interno"; 
-          width: 1000px; 
-          height: 500px 
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 3fr;
+       gap: 0px 74px;
+       grid-auto-flow: row;
+       grid-template-areas:
+         "atenerencuenta interno";
+         width: 900px;
+     }
+     
+     .atenerencuenta { grid-area: atenerencuenta; }
+     
+     .interno { grid-area: interno; }
       }
       .titulosobre { grid-area: titulosobre; }
       .atenerencuenta { 
@@ -236,11 +285,70 @@ width: 300px;
      }
      
 
-}
+
 
 /*nosotros*/
+.nosotros{
+    
+    width: auto;
+    height: 100vh;
+    background-image: url(imagenes/munich.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.h1nosotros{
+    color: rgb(205, 202, 50);
+    font-size: 30px;
+}
 
-
+.grid {  
+    background-color: rgba(255, 255, 255, 0.124);
+    backdrop-filter: blur(7px);
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 1.4fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "foto1 foto2 parrafo"
+      "foto3 foto4 parrafo";
+    width: 480px;
+    height: 480px;
+  }
+  
+  .parrafo {
+    grid-area: parrafo;
+    color: rgb(205, 202, 50); }
+  
+  .foto1 { 
+    grid-area: foto1;
+    background-image: url(imagenes/grupotaller.jpeg);
+    
+    background-size: contain;
+    background-repeat: no-repeat; }
+  
+  .foto2 {
+    grid-area: foto2;
+    background-image: url(imagenes/escuelatalleralumnos.jpg);
+    
+    background-size: contain;
+    background-repeat: no-repeat; }
+  
+  .foto3 { 
+    grid-area: foto3;
+    background-image: url(imagenes/grupo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  
+  .foto4 { 
+    grid-area: foto4;
+    background-image: url(imagenes/nosotros.jpg);
+    grid-area: foto4;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  
+@media only screen and (min-width:480px){
 
 .nosotros{
     
@@ -256,7 +364,7 @@ width: 300px;
     background-color: rgba(255, 255, 255, 0.124);
     backdrop-filter: blur(7px);
     margin: 0px;
-    position: fixed;
+    position:static;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 0.1fr 1.5fr 1.5fr; 
@@ -317,7 +425,7 @@ background-repeat: no-repeat;
 .foto4:hover{
     transform:scale(1.2,1.2)
 }
-
+}
 /*trabajos*/
 .trabajos{
     margin: 0%;
@@ -334,6 +442,46 @@ background-repeat: no-repeat;
 }
 
 /*contacto*/
+
+
+.contacto{
+    color: rgb(205, 202, 50);
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;   
+    background-image: url(imagenes/piramide2.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    
+}
+
+
+.form{
+
+    
+
+    background-color:rgba(0, 0, 0, 0.4);
+    width: 250px;
+    margin: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+input, textarea{
+width: 100%;
+margin-bottom: 20px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 20px;
+}
+
+
+@media only screen and (min-width:480px){
 .contacto1{
     font-size: 70px;
     margin:20px;
@@ -368,8 +516,13 @@ padding: 7px;
 box-sizing: border-box;
 font-size: 20px;
 }
+
+}
+
+
 /*footer*/
 .footer{
+    text-decoration: none;
     font-size: smaller;
     background-color: black;
     color: azure;
@@ -378,6 +531,7 @@ font-size: 20px;
 
 @media only screen and (min-width:480px){
 .footer{
+   text-decoration: none;
    width: auto;
    height: 10vh;
    display: flex;
@@ -385,5 +539,7 @@ font-size: 20px;
    justify-content: center;
    background-color: black;
    color: azure;
+   
 }
+
 }
